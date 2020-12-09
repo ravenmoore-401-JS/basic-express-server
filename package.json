@@ -4,17 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest --coverage",
+    "test-watch": "jest --watchAll --coverage"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ravenmoore-401-JS/basic-express-server.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matt Ravenmoore",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ravenmoore-401-JS/basic-express-server/issues"
   },
-  "homepage": "https://github.com/ravenmoore-401-JS/basic-express-server#readme"
+  "homepage": "https://github.com/ravenmoore-401-JS/basic-express-server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "supertest": "^6.0.1"
+  }
 }
